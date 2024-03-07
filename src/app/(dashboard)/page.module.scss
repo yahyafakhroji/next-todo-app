@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 24px auto 0;
+  gap: 24px;
+  padding: 0 24px;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .list {
+    margin-top: 24px;
+
+    .table {
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+    }
+  }
+}

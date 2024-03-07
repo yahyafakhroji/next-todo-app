@@ -1,0 +1,96 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: solid 1px transparent;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  gap: 6px;
+  box-shadow: var(--button-shadow);
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    line-height: 1.5;
+  }
+
+  &.md {
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    padding: 8px 16px;
+
+    .icon {
+      svg {
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+
+  &.sm {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 10px;
+    height: 28px;
+
+    .icon {
+      svg {
+        height: 14px;
+        width: 14px;
+      }
+    }
+  }
+
+  &.xs {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 2px 8px;
+    height: 24px;
+
+    .icon {
+      svg {
+        height: 12px;
+        width: 12px;
+      }
+    }
+  }
+
+  &.primary {
+    background-color: var(--primary-color);
+    color: var(--foreground-color);
+
+    &:hover {
+      background-color: var(--dark-primary-color);
+    }
+  }
+
+  &.danger {
+    background-color: var(--danger-color);
+    color: var(--foreground-color);
+
+    &:hover {
+      background-color: var(--dark-danger-color);
+    }
+  }
+
+  &.ghost {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &.outline {
+    background-color: transparent;
+    box-shadow: none;
+    border: solid 1px var(--border-color);
+  }
+}

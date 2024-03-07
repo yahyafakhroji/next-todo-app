@@ -1,0 +1,26 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 14px 24px;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--border-color);
+    height: 70px;
+    
+    .title {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+    }
+  }
+
+  .content {
+    flex: 1;
+    max-height: calc(100vh - 70px);
+  }
+}
