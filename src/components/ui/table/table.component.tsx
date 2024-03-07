@@ -24,7 +24,7 @@ export default function Table({
         <tr className={style.trow}>
           {columns.map((col) => {
             return (
-              <th key={`head_${col.key}`} className={style.tcell} width={col.width}>
+              <th key={`head_${col.key}`} className={style.tcell} style={{ width: col.width || 'auto' }}>
                 <div className={style['tcell-content']}>{col.title || ''}</div>
               </th>
             );
